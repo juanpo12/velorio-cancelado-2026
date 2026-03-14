@@ -9,6 +9,7 @@ interface Speaker {
   days: string
   time: string
   image: StaticImageData
+  imagePosition?: string
 }
 
 interface SpeakerCardProps {
@@ -20,12 +21,13 @@ export function SpeakerCard({ speaker, index }: SpeakerCardProps) {
   return (
     <div className="group relative bg-card rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
       {/* Speaker image */}
-      <div className="relative h-64 bg-secondary overflow-hidden">
+      <div className="relative h-120 bg-secondary overflow-hidden">
         <Image
           src={speaker.image}
           alt={speaker.name}
           fill
           className="object-cover group-hover:scale-105 transition-transform duration-500"
+          style={{ objectPosition: speaker.imagePosition || '' }}
           sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
 

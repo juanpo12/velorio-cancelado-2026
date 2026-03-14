@@ -6,7 +6,7 @@ export function LocationSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 
+          <h2
             className="text-4xl sm:text-5xl md:text-6xl font-bold text-primary tracking-tight mb-4"
             style={{ fontFamily: 'var(--font-heading)' }}
           >
@@ -21,54 +21,16 @@ export function LocationSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Map placeholder */}
           <div className="relative h-80 lg:h-96 bg-card rounded-2xl overflow-hidden shadow-lg border border-border">
-            {/* Stylized map background */}
-            <div className="absolute inset-0 bg-primary/5">
-              <svg className="w-full h-full opacity-20" viewBox="0 0 400 300">
-                {/* Grid lines */}
-                {[...Array(10)].map((_, i) => (
-                  <line 
-                    key={`v-${i}`}
-                    x1={i * 40} y1="0" x2={i * 40} y2="300" 
-                    stroke="currentColor" 
-                    strokeWidth="1"
-                    className="text-primary"
-                  />
-                ))}
-                {[...Array(8)].map((_, i) => (
-                  <line 
-                    key={`h-${i}`}
-                    x1="0" y1={i * 40} x2="400" y2={i * 40} 
-                    stroke="currentColor" 
-                    strokeWidth="1"
-                    className="text-primary"
-                  />
-                ))}
-                {/* Roads */}
-                <path d="M0,150 L400,150" stroke="currentColor" strokeWidth="8" className="text-primary/30" />
-                <path d="M200,0 L200,300" stroke="currentColor" strokeWidth="8" className="text-primary/30" />
-              </svg>
-            </div>
-            
-            {/* Location marker */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="relative">
-                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center shadow-lg animate-pulse">
-                  <MapPin className="w-8 h-8 text-primary-foreground" />
-                </div>
-                <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-4 h-4 bg-primary rotate-45" />
-              </div>
-            </div>
-
-            {/* Church label */}
-            <div className="absolute bottom-4 left-4 right-4 bg-card/95 backdrop-blur-sm p-4 rounded-lg shadow-md">
-              <p 
-                className="font-bold text-primary"
-                style={{ fontFamily: 'var(--font-heading)' }}
-              >
-                Cristo la Solución
-              </p>
-              <p className="text-sm text-muted-foreground">Ministerio</p>
-            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.7526004077745!2d-58.56511212445445!3d-34.68619297292483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc623af501339%3A0xc605a8a195d8ce69!2sAv.%20Brig.%20Gral.%20Juan%20Manuel%20de%20Rosas%204357%2C%20B1754FVB%20San%20Justo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1757106329998!5m2!1ses-419!2sar"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Ubicación Cristo La Solución"
+            />
           </div>
 
           {/* Contact Info */}
@@ -78,15 +40,15 @@ export function LocationSection() {
                 <MapPin className="w-6 h-6 text-primary" />
               </div>
               <div>
-                <h3 
+                <h3
                   className="text-xl font-bold text-foreground mb-1"
                   style={{ fontFamily: 'var(--font-heading)' }}
                 >
                   Dirección
                 </h3>
                 <p className="text-muted-foreground">
-                  Av. Principal 1234<br />
-                  Ciudad, País
+                  Juan Manuel de Rosas 4357<br />
+                  San Justo, Buenos Aires
                 </p>
               </div>
             </div>
@@ -96,13 +58,13 @@ export function LocationSection() {
                 <Phone className="w-6 h-6 text-primary" />
               </div>
               <div>
-                <h3 
+                <h3
                   className="text-xl font-bold text-foreground mb-1"
                   style={{ fontFamily: 'var(--font-heading)' }}
                 >
                   Teléfono
                 </h3>
-                <p className="text-muted-foreground">+54 9 11 1234-5678</p>
+                <p className="text-muted-foreground">+54 9 11 2864-8642</p>
               </div>
             </div>
 
@@ -111,19 +73,19 @@ export function LocationSection() {
                 <Mail className="w-6 h-6 text-primary" />
               </div>
               <div>
-                <h3 
+                <h3
                   className="text-xl font-bold text-foreground mb-1"
                   style={{ fontFamily: 'var(--font-heading)' }}
                 >
                   Email
                 </h3>
-                <p className="text-muted-foreground">info@cristolasolucion.com</p>
+                <p className="text-muted-foreground">oficinasclsj@gmail.com</p>
               </div>
             </div>
 
             {/* CTA Button */}
             <a
-              href="https://maps.google.com"
+              href="https://www.google.com/maps/dir//Av.+Brig.+Gral.+Juan+Manuel+de+Rosas+4357,+B1754FVB+San+Justo,+Provincia+de+Buenos+Aires,+Argentina"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-accent transition-colors"

@@ -11,6 +11,7 @@ const speakers = [
     days: "Jueves 2 y Viernes 3",
     time: "19:30hs",
     image: velorio1,
+    imagePosition: "60% 40%",
   },
   {
     name: "Cultura Music",
