@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
+import { CrownOfThorns } from "./crown-of-thorns"
 
 const navLinks = [
   { href: "#inicio", label: "Inicio" },
@@ -19,9 +20,7 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <a href="#inicio" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg" style={{ fontFamily: 'var(--font-heading)' }}>C</span>
-            </div>
+            <CrownOfThorns className="w-10 h-10" />
             <div className="hidden sm:block">
               <p className="text-xs text-muted-foreground uppercase tracking-wider">Ministerio</p>
               <p className="text-sm font-semibold text-primary" style={{ fontFamily: 'var(--font-heading)' }}>Cristo la Solución</p>
