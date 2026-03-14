@@ -4,26 +4,25 @@ const schedule = [
   {
     day: "Jueves 2",
     events: [
-      { time: "19:30hs", title: "Noche de Apertura", speaker: "Pr. Daniel Simão" }
+      { time: "19:30hs", title: "Noche de restauración", speaker: "Pr. Daniel Simão" }
     ]
   },
   {
     day: "Viernes 3",
     events: [
-      { time: "19:30hs", title: "Viernes Santo", speaker: "Pr. Daniel Simão" }
+      { time: "19:30hs", title: "Noche de ministración", speaker: "Pr. Daniel Simão" }
     ]
   },
   {
     day: "Sábado 4",
     events: [
-      { time: "19:30hs", title: "Noche de Alabanza", speaker: "Cultura Music" }
+      { time: "19:30hs", title: "Noche de adoración", speaker: "Cultura Music" }
     ]
   },
   {
     day: "Domingo 5",
     events: [
-      { time: "11:00hs", title: "Celebración de Resurrección", speaker: "Santa Cena" },
-      { time: "19:00hs", title: "Servicio de Cierre", speaker: "Santa Cena" }
+      { time: "11:00hs", title: "Celebración de la resurrección", speaker: "Santa Cena" },
     ]
   }
 ]

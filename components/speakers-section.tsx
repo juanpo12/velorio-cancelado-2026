@@ -3,22 +3,22 @@ import { SpeakerCard } from "./speaker-card"
 const speakers = [
   {
     name: "Pr. Daniel Simão",
-    role: "Pastor y Conferencista",
-    description: "Predicador apasionado por la Palabra de Dios, con más de 20 años de ministerio.",
+    role: "Pastor",
+    description: "Líder, ministro y pastor apasionado por ver a las generaciones alcanzadas y transformadas por el poder del evangelio.",
     days: "Jueves 2 y Viernes 3",
     time: "19:30hs",
   },
   {
     name: "Cultura Music",
     role: "Ministerio de Alabanza",
-    description: "Grupo de adoración que lleva el corazón de la iglesia a través de la música.",
+    description: "Grupo de adoración que busca expresar, a través de canciones que nacen del discipulado, la oración y la transformación, la presencia de Dios.",
     days: "Sábado 4",
     time: "19:30hs",
   },
   {
     name: "Santa Cena",
     role: "Domingo de Resurrección",
-    description: "Celebración especial recordando el sacrificio y la victoria de Cristo.",
+    description: "Día de Resurrección celebramos su victoria mediante la Santa Cena, tal como Él nos enseñó: “Hagan esto en memoria de mí”.",
     days: "Domingo 5",
     time: "11:00hs y 19:00hs",
   },
