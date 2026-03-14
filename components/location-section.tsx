@@ -79,7 +79,7 @@ export function LocationSection() {
                 >
                   Email
                 </h3>
-                <p className="text-muted-foreground">oficinasclsj@gmail.com</p>
+                <p className="text-muted-foreground">contacto@cristolasolucionsj.com</p>
               </div>
             </div>
 
