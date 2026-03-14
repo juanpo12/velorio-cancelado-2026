@@ -1,4 +1,7 @@
 import { SpeakerCard } from "./speaker-card"
+import velorio1 from "@/assets/logos/VELORIO 1.png"
+import velorio11 from "@/assets/logos/VELORIO 11.png"
+import velorio111 from "@/assets/logos/VELORIO 111.png"
 
 const speakers = [
   {
@@ -7,6 +10,7 @@ const speakers = [
     description: "Líder, ministro y pastor apasionado por ver a las generaciones alcanzadas y transformadas por el poder del evangelio.",
     days: "Jueves 2 y Viernes 3",
     time: "19:30hs",
+    image: velorio1,
   },
   {
     name: "Cultura Music",
@@ -14,6 +18,7 @@ const speakers = [
     description: "Grupo de adoración que busca expresar, a través de canciones que nacen del discipulado, la oración y la transformación, la presencia de Dios.",
     days: "Sábado 4",
     time: "19:30hs",
+    image: velorio11,
   },
   {
     name: "Santa Cena",
@@ -21,6 +26,7 @@ const speakers = [
     description: "Día de Resurrección celebramos su victoria mediante la Santa Cena, tal como Él nos enseñó: “Hagan esto en memoria de mí”.",
     days: "Domingo 5",
     time: "11:00hs y 19:00hs",
+    image: velorio111,
   },
 ]
 
@@ -30,7 +36,7 @@ export function SpeakersSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 
+          <h2
             className="text-4xl sm:text-5xl md:text-6xl font-bold text-primary-foreground tracking-tight mb-4"
             style={{ fontFamily: 'var(--font-heading)' }}
           >
@@ -50,15 +56,6 @@ export function SpeakersSection() {
         </div>
       </div>
 
-      {/* Decorative wave pattern */}
-      <div className="absolute left-0 right-0 h-32 opacity-10 pointer-events-none overflow-hidden">
-        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-full">
-          <path 
-            d="M0,0 C150,90 350,0 500,50 C650,100 700,0 900,50 C1100,100 1200,0 1200,0 L1200,120 L0,120 Z" 
-            fill="currentColor"
-          />
-        </svg>
-      </div>
     </section>
   )
 }

@@ -1,6 +1,6 @@
 "use client"
 
-import { User, Music, Wine } from "lucide-react"
+import Image, { StaticImageData } from "next/image"
 
 interface Speaker {
   name: string
@@ -8,6 +8,7 @@ interface Speaker {
   description: string
   days: string
   time: string
+  image: StaticImageData
 }
 
 interface SpeakerCardProps {
@@ -15,47 +16,26 @@ interface SpeakerCardProps {
   index: number
 }
 
-const icons = [User, Music, Wine]
-
 export function SpeakerCard({ speaker, index }: SpeakerCardProps) {
-  const Icon = icons[index % icons.length]
-  
   return (
     <div className="group relative bg-card rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-      {/* Image placeholder with gradient overlay */}
+      {/* Speaker image */}
       <div className="relative h-64 bg-secondary overflow-hidden">
-        {/* Circular pattern background */}
-        <div className="absolute inset-0">
-          <svg className="w-full h-full opacity-10" viewBox="0 0 200 200">
-            {[...Array(8)].map((_, i) => (
-              <circle 
-                key={i} 
-                cx="100" 
-                cy="100" 
-                r={20 + i * 15} 
-                fill="none" 
-                stroke="currentColor" 
-                strokeWidth="1"
-                className="text-primary"
-              />
-            ))}
-          </svg>
-        </div>
-        
-        {/* Icon representation */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="w-32 h-32 rounded-full bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-            <Icon className="w-16 h-16 text-primary" />
-          </div>
-        </div>
-        
+        <Image
+          src={speaker.image}
+          alt={speaker.name}
+          fill
+          className="object-cover group-hover:scale-105 transition-transform duration-500"
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+        />
+
         {/* Gradient overlay */}
         <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-card to-transparent" />
       </div>
-      
+
       {/* Content */}
       <div className="p-6">
-        <h3 
+        <h3
           className="text-2xl font-bold text-foreground mb-1"
           style={{ fontFamily: 'var(--font-heading)' }}
         >
@@ -67,12 +47,12 @@ export function SpeakerCard({ speaker, index }: SpeakerCardProps) {
         <p className="text-muted-foreground text-sm mb-4">
           {speaker.description}
         </p>
-        
+
         {/* Schedule info */}
         <div className="pt-4 border-t border-border">
           <div className="flex items-center justify-between">
             <div>
-              <p 
+              <p
                 className="text-lg font-semibold text-primary"
                 style={{ fontFamily: 'var(--font-heading)' }}
               >
