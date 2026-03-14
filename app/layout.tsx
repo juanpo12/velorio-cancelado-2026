@@ -3,13 +3,13 @@ import { Oswald, Open_Sans } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const oswald = Oswald({ 
+const oswald = Oswald({
   subsets: ["latin"],
   variable: '--font-heading',
   weight: ['400', '500', '600', '700']
 });
 
-const openSans = Open_Sans({ 
+const openSans = Open_Sans({
   subsets: ["latin"],
   variable: '--font-body'
 });
@@ -17,7 +17,6 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   title: 'Velorio Cancelado | Cristo la Solución',
   description: 'Evento cristiano de Semana Santa - 2 al 5 de Abril. ¡Cristo ha resucitado!',
-  generator: 'v0.app',
   icons: {
     icon: [
       {
@@ -33,7 +32,7 @@ export const metadata: Metadata = {
         type: 'image/svg+xml',
       },
     ],
-    apple: '/apple-icon.png',
+    apple: '/crown-of-thorns.svg',
   },
 }
 
