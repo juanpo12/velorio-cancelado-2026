@@ -1,9 +1,10 @@
-import { Facebook, Instagram, Youtube, Heart } from "lucide-react"
+import { Facebook, Instagram, Youtube, Heart, MessageCircle } from "lucide-react"
 
 const socialLinks = [
-  { icon: Facebook, href: "#", label: "Facebook" },
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Youtube, href: "#", label: "YouTube" },
+  { icon: Youtube, href: "https://www.youtube.com/@AlfredoDimiroLive", label: "YouTube" },
+  { icon: Instagram, href: "https://www.instagram.com/cristolasolucionsj/", label: "Instagram" },
+  { icon: Facebook, href: "https://www.facebook.com/AlfredoDimiro", label: "Facebook" },
+  { icon: MessageCircle, href: "https://wa.me/message/IAMHFRO2IBX6B1", label: "WhatsApp" },
 ]
 
 export function Footer() {
@@ -26,7 +27,7 @@ export function Footer() {
 
           {/* Event */}
           <div className="text-center">
-            <h3 
+            <h3
               className="text-2xl font-bold mb-2"
               style={{ fontFamily: 'var(--font-heading)' }}
             >
@@ -44,10 +45,12 @@ export function Footer() {
                 <a
                   key={label}
                   href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={label}
-                  className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
+                  className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors duration-300 group"
                 >
-                  <Icon className="w-5 h-5" />
+                  <Icon className="w-5 h-5 text-primary-foreground transition-transform group-hover:scale-110" />
                 </a>
               ))}
             </div>
@@ -57,7 +60,7 @@ export function Footer() {
         {/* Divider */}
         <div className="border-t border-primary-foreground/20 mt-8 pt-8">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm opacity-60">
-            <p>© 2025 Cristo la Solución. Todos los derechos reservados.</p>
+            <p>&copy; {new Date().getFullYear()} Cristo La Solución. Todos los derechos reservados.</p>
             <p className="flex items-center gap-1">
               Hecho con <Heart className="w-4 h-4 fill-current" /> para la gloria de Dios
             </p>
