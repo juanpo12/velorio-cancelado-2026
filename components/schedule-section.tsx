@@ -22,7 +22,7 @@ const schedule = [
   {
     day: "Domingo 5",
     events: [
-      { time: "11:00hs", title: "Celebración de la resurrección", speaker: "Santa Cena" },
+      { time: "11:00 y 19:00hs", title: "Celebración de la resurrección", speaker: "Santa Cena" },
     ]
   }
 ]

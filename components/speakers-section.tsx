@@ -41,11 +41,11 @@ export function SpeakersSection() {
             className="text-4xl sm:text-5xl md:text-6xl font-bold text-primary-foreground tracking-tight mb-4"
             style={{ fontFamily: 'var(--font-heading)' }}
           >
-            ORADORES
+            INVITADOS
           </h2>
           <div className="w-24 h-1 bg-primary-foreground/30 mx-auto mb-6" />
           <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto">
-            Hombres y mujeres de Dios que compartirán la Palabra en este evento especial
+            Será un tiempo especial compartido junto a:
           </p>
         </div>
 
