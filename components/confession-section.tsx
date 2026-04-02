@@ -11,7 +11,7 @@ export function ConfessionSection() {
           Confesión de Fe
         </h2>
         <div className="w-24 h-1 bg-primary/30 mx-auto mb-8" />
-        
+
         <h3 className="text-2xl md:text-3xl font-semibold text-foreground mb-8">
           ¿Querés aceptar a Jesús en tu corazón?
         </h3>
@@ -23,7 +23,7 @@ export function ConfessionSection() {
         </div>
 
         <a
-          href="https://wa.me/5491128648642?text=Hola,%20quisiera%20conocer%20m%C3%A1s%20sobre%20la%20confesi%C3%B3n%20de%20fe"
+          href="https://wa.me/message/IAMHFRO2IBX6B1?text=Hola,%20quisiera%20conocer%20m%C3%A1s%20sobre%20la%20confesi%C3%B3n%20de%20fe"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-3 px-8 py-4 bg-[#25D366] hover:bg-[#128C7E] text-white font-bold rounded-xl transition-all shadow-lg hover:shadow-xl hover:-translate-y-1"
